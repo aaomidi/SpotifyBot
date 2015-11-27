@@ -1,9 +1,9 @@
-package com.aaomidi.spotify.commands;
+package com.aaomidi.commands;
 
-import com.aaomidi.spotify.SpotifyBot;
-import com.aaomidi.spotify.engine.TelegramCommand;
-import com.aaomidi.spotify.engine.TrackInformation;
-import com.aaomidi.spotify.util.LogHandler;
+import com.aaomidi.SpotifyBot;
+import com.aaomidi.engine.TelegramCommand;
+import com.aaomidi.engine.TrackInformation;
+import com.aaomidi.util.LogHandler;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.RemovalListener;

@@ -1,4 +1,4 @@
-package com.aaomidi.spotify.util;
+package com.aaomidi.util;
 
 /**
  * Created by amir on 2015-11-25.

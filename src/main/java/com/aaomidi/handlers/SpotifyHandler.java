@@ -1,7 +1,7 @@
-package com.aaomidi.spotify.handlers;
+package com.aaomidi.handlers;
 
-import com.aaomidi.spotify.SpotifyBot;
-import com.aaomidi.spotify.util.LogHandler;
+import com.aaomidi.SpotifyBot;
+import com.aaomidi.util.LogHandler;
 import com.wrapper.spotify.Api;
 import com.wrapper.spotify.methods.*;
 import com.wrapper.spotify.models.*;
