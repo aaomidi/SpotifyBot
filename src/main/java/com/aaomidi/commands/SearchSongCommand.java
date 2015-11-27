@@ -71,7 +71,7 @@ public class SearchSongCommand extends TelegramCommand {
                 LogHandler.logn("Size: %d", tracks.size());
                 List<String> row = new ArrayList<>();
                 for (int i = 0; i < tracks.size(); i ++) {
-                    if (i / 3 >= 1 && i % 3 == 0) {
+                    if (i / 2 >= 1 && i % 2 == 0) {
                         replyKeyboard.addRow(row);
                         row = new ArrayList<>();
                     }
