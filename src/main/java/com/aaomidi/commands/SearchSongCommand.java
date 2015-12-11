@@ -60,6 +60,9 @@ public class SearchSongCommand extends TelegramCommand {
 
             @Override
             public void accept(List<Track> tracks) {
+                if (tracks.size() == 0) {
+                    chat.sendMessage("No songs found.", getTelegramBot());
+                }
                 if (tracks.size() == 1) {
                     Consumer<Track> con = getInstance().getSpotifyHandler().constructTrackConsumer(getTelegramBot(), event.getChat(), event.getMessage());
                     con.accept(tracks.get(0));
@@ -68,9 +71,8 @@ public class SearchSongCommand extends TelegramCommand {
 
                 ReplyKeyboardMarkup.ReplyKeyboardMarkupBuilder replyKeyboard = ReplyKeyboardMarkup.builder();
                 HashMap<String, Track> trackHashMap = new HashMap<>();
-                LogHandler.logn("Size: %d", tracks.size());
                 List<String> row = new ArrayList<>();
-                for (int i = 0; i < tracks.size(); i ++) {
+                for (int i = 0; i < tracks.size(); i++) {
                     if (i / 2 >= 1 && i % 2 == 0) {
                         replyKeyboard.addRow(row);
                         row = new ArrayList<>();

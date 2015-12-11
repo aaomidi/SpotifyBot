@@ -145,7 +145,7 @@ public class SpotifyHandler {
                         .duration(30)
                         .title(track.getName())
                         .performer(track.getArtists().get(0).getName())
-                        .audio(new InputFile(new URL(track.getPreviewUrl() + ".mp3")))
+                        .audio(new InputFile(new URL(track.getPreviewUrl())))
                         .replyTo(m)
                         .build();
 
