@@ -145,7 +145,7 @@ public class SpotifyHandler {
                         .duration(30)
                         .title(track.getName())
                         .performer(track.getArtists().get(0).getName())
-                        .audio(new InputFile(new URL(track.getPreviewUrl())))
+                        .audio(new InputFile(new URL(track.getPreviewUrl() + ".mp3")))
                         .replyTo(m)
                         .build();
 
@@ -322,15 +322,12 @@ public class SpotifyHandler {
     }
 
     public void searchSongAsync(final String name, final Consumer<List<Track>> consumer) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                List<Track> tracks = searchSong(name);
+        new Thread(() -> {
+            List<Track> tracks = searchSong(name);
 
-                if (tracks == null || tracks.size() == 0) return;
+            if (tracks == null || tracks.size() == 0) return;
 
-                consumer.accept(tracks);
-            }
+            consumer.accept(tracks);
         }).start();
     }
 
