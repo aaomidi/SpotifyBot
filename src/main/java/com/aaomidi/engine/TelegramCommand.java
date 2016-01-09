@@ -1,10 +1,10 @@
 package com.aaomidi.engine;
 
-        import com.aaomidi.SpotifyBot;
-        import lombok.Getter;
-        import pro.zackpollard.telegrambot.api.TelegramBot;
-        import pro.zackpollard.telegrambot.api.event.chat.message.CommandMessageReceivedEvent;
-        import pro.zackpollard.telegrambot.api.event.chat.message.TextMessageReceivedEvent;
+import com.aaomidi.SpotifyBot;
+import lombok.Getter;
+import pro.zackpollard.telegrambot.api.TelegramBot;
+import pro.zackpollard.telegrambot.api.event.chat.message.CommandMessageReceivedEvent;
+import pro.zackpollard.telegrambot.api.event.chat.message.TextMessageReceivedEvent;
 
 /**
  * Created by amir on 2015-11-26.

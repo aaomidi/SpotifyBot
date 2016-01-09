@@ -51,7 +51,11 @@ public class SpotifyBot {
             //Chat chat = TelegramBot.getChat(-14978569);
             //chat.sendMessage("Hi!", telegramHook.getBot());
             //String in = System.console().readLine();
-
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
