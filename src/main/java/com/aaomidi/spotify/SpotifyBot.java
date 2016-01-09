@@ -53,7 +53,7 @@ public class SpotifyBot {
             //String in = System.console().readLine();
             try {
                 Thread.sleep(500);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
