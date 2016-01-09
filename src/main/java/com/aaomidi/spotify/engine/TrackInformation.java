@@ -1,4 +1,4 @@
-package com.aaomidi.engine;
+package com.aaomidi.spotify.engine;
 
 import com.wrapper.spotify.models.Track;
 import lombok.Getter;

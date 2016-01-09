@@ -1,8 +1,8 @@
-package com.aaomidi.handlers;
+package com.aaomidi.spotify.handlers;
 
-import com.aaomidi.SpotifyBot;
-import com.aaomidi.commands.SearchSongCommand;
-import com.aaomidi.engine.TelegramCommand;
+import com.aaomidi.spotify.SpotifyBot;
+import com.aaomidi.spotify.commands.SearchSongCommand;
+import com.aaomidi.spotify.engine.TelegramCommand;
 import pro.zackpollard.telegrambot.api.event.chat.message.CommandMessageReceivedEvent;
 import pro.zackpollard.telegrambot.api.event.chat.message.TextMessageReceivedEvent;
 

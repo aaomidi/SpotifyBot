@@ -1,9 +1,9 @@
-package com.aaomidi;
+package com.aaomidi.spotify;
 
-import com.aaomidi.handlers.CommandHandler;
-import com.aaomidi.handlers.SpotifyHandler;
-import com.aaomidi.hooks.TelegramHook;
-import com.aaomidi.util.LogHandler;
+import com.aaomidi.spotify.handlers.CommandHandler;
+import com.aaomidi.spotify.handlers.SpotifyHandler;
+import com.aaomidi.spotify.hooks.TelegramHook;
+import com.aaomidi.spotify.util.LogHandler;
 import lombok.Getter;
 
 /**

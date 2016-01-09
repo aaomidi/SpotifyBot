@@ -1,8 +1,8 @@
-package com.aaomidi.hooks;
+package com.aaomidi.spotify.hooks;
 
-import com.aaomidi.SpotifyBot;
-import com.aaomidi.handlers.SpotifyHandler;
-import com.aaomidi.util.LogHandler;
+import com.aaomidi.spotify.SpotifyBot;
+import com.aaomidi.spotify.handlers.SpotifyHandler;
+import com.aaomidi.spotify.util.LogHandler;
 import com.wrapper.spotify.models.Album;
 import com.wrapper.spotify.models.Artist;
 import com.wrapper.spotify.models.Track;
